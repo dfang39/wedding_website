@@ -13,11 +13,11 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="dist/css/styles.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,600|Vollkorn:600" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,600|Amatic+SC" rel="stylesheet">
+    
 
   </head>
 
@@ -27,58 +27,72 @@
     
     <div class="tabs">
       <nav class="tab-list">
-        <a class="tab active" href="#one">Date</a>
-        <a class="tab" href="#two">Location</a>
-        <a class="tab" href="#three">Accommodation</a>
-        <a class="tab" href="#four">Travel</a>
-        <a class="tab" href="#five">Things to Do</a>
+        <a class="tab active" href="#date"><i class="fa fa-calendar-o" aria-hidden="true"></i></a>
+        <a class="tab" href="#location"><i class="fa fa-globe" aria-hidden="true"></i></a>
+        <a class="tab" href="#housing"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a class="tab" href="#travel"><i class="fa fa-plane" aria-hidden="true"></i></a>
+        <a class="tab" href="#packing"><i class="fa fa-suitcase" aria-hidden="true"></i></a>
+        <a class="tab" href="#things"><i class="fa fa-camera" aria-hidden="true"></i></a>
       </nav>
     
-      <div id="one" class="tab-content show">
-        <div>celebration <br />
-          07.09.2018</div>
-        <div>wedding week <br />
-        07.08.2018 - 07.15.2018 </div>
+      <div id="date" class="tab-content show">
+          
+        <div><span class="text">celebration</span><br />
+          <span class="date">07.09.2018</span></div>
+        <div><span class="text">wedding week</span><br />
+        <span class="date">07.08.2018 - 07.14.2018</span></div>
       </div>
     
-      <div id="two" class="tab-content">
-        <img class="image" src="dist/images/reynisfjara_black_sand_beach.jpg" alt="reynisfjara" />
-        reynisfjara
+      <div id="location" class="tab-content">
+        <p>We have chosen to go on an Icelandic adventure as part of our wedding celebration, and we love that you're joining us! As you know, Iceland is a beautiful island full of waterfalls, glaciers, and hot springs. We would like to spend just one day during the week to dress up and have a small "ceremony" in an idyllic location, while spending the rest of the week on a vacation with you, our loved ones.</p>
+        <p>Currently, our favorite potential wedding celebration location is on the black beach of Reynisfjara, with a backdrop of jagged rock formations that you probably can't find anywhere else on earth. If you happen to find another picturesque location, please let us know!</p>
+        <p><img class="image" src="dist/images/reynisfjara_black_sand_beach.jpg" alt="reynisfjara" /></p>
       </div>
     
-      <div id="three" class="tab-content">
-        cabin information
+      <div id="housing" class="tab-content">
+          <p><img class="image" src="dist/images/cabin-info.jpg" alt="reynisfjara" /></p>
+        <p>We have booked a 6-bedroom cabin near Hella, in the middle of the "Golden Circle" (the southwestern part of Iceland closest to a number of sites). The cabin is about an hour away from Reykjavik. To find out more information about the cabin, click <a href="https://www.vrbo.com/980266ha">here</a>.</p>
       </div>
 
-      <div id="four" class="tab-content">
-        wow airlines
-        packing list
+      <div id="travel" class="tab-content">
+        <p>Luckily for us, the Icelandic airline WOWair has roundtrip flights to Reykjavik for around $600. They fly out of Newark, Pittsburgh, and Cincinatti. Depending on who flies out of which airport, we can make some plans for getting to those airports together. You can find the WOWair website <a href="https://wowair.us">here</a>.</p>
+        <p>We would love it if you can arrange to join us in Reykjavik on 8/14 to travel to the cabin together, but we understand if you can't make it exactly on that date. We can arrange for both pick-ups and rental cars, depending on when everyone is flying in.</p>
+        <p>During the week, we plan to have at least 2-3 rental cars with us; this way, we can allow for some flexibility for what everyone might want to see.</p>
       </div>
 
-      <div id="five" class="tab-content">
+      <div id="packing" class="tab-content">
+        <p>July is the warmest month in Iceland. However, "warm" in Iceland means an average high of 57F and low of 48F. Please pack your luggage accordingly!</p>
+        <p>Remember to pack:</p>
+        <ul>
+          <li><b>Swim suit!</b> There is a hot tub at the cabin and hot springs galore.</li>
+          <li>Something nice to wear in pictures on wedding celebration day.</li>
+        </ul>
+      </div>
+
+      <div id="things" class="tab-content">
         google maps 
+        <div id="map"></div>
+        <script src="dist/js/map.js"></script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6ETOSeJ2Ajy_ksMgpZ-62UmnetjgvG58&callback=initMap">
+          </script>
       </div>
     </div>
 
     <!-- Map Section -->
-    <div id="map"></div>
+    
 
     <!-- Footer -->
     <footer>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="dist/js/script.js"></script>
+    
 
   </body>
 
